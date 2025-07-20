@@ -2,15 +2,48 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>GloryDub Смотреть Аниме Бесплатно</title>
+  <title>GloryDub Смотреть Аниме Бесплатно</t</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+    }
+    .item {
+      cursor: pointer;
+      text-align: center;
+    }
+    .item img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .item img:hover {
+      transform: scale(1.05);
+    }
+    .item p {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>Название аниме — Серия 1</h1>
-  <video controls width="720">
-    <source src="video/episode1.mp4" type="video/mp4" />
-    Ваш браузер не поддерживает видео.
-  </video>
-  <h2>Перевод</h2>
-  <p>Здесь текст перевода или субтитры.</p>
+  <h1>GloryDub</h1>
+  <div class="gallery">
+    <div class="item" onclick="location.href='video1.html'">
+      <img src="covers/anime1.jpg" alt="Аниме 1" />
+      <p>Аниме 1 — Серия 1</p>
+    </div>
+    <div class="item" onclick="location.href='video2.html'">
+      <img src="covers/anime2.jpg" alt="Аниме 2" />
+      <p>Аниме 2 — Серия 1</p>
+    </div>
+  </div>
 </body>
 </html>
